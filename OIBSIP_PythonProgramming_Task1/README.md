@@ -1,9 +1,22 @@
 # Voice Assistant (Beginner) — OIBSIP Python Programming, Task 1
 
-A simple Python voice assistant that listens for spoken commands and
-responds with speech and text. If no microphone is detected, it
-automatically falls back to a typed-text mode so it still runs on any
-machine.
+This project is a Python-based voice assistant developed for the OIBSIP Python Programming Internship. It can recognize voice commands, provide spoken responses, perform web searches, retrieve information from Wikipedia, and automatically switch to text mode when a microphone is unavailable.
+
+## Overview
+
+The Voice Assistant is a beginner-level Python application designed to demonstrate speech recognition, text-to-speech conversion, and web automation. The assistant can interact through voice commands and continue working through keyboard input if audio hardware is not available.
+
+
+## Learning Outcomes
+
+Through this project, I gained practical experience with:
+
+- Speech Recognition using Python
+- Text-to-Speech conversion
+- Browser automation
+- Working with external Python libraries
+- Error and exception handling
+- Building interactive command-line applications
 
 ## Features
 
@@ -46,14 +59,22 @@ machine.
    ```bash
    python voice_assistant.py
    ```
+   
+4. If the Wikipedia module is missing, install it using:
+
+   ```bash
+   pip install wikipedia
+   ```
 
 ### Troubleshooting
 
 - **`No module named 'distutils'`** — Python 3.12+ removed the built-in
   `distutils` module, which an older dependency still expects. Fix:
+  
   ```bash
   pip install --upgrade setuptools
   ```
+  
 - **`pyaudio` fails to build / "Microsoft Visual C++ 14.0 required"** — this
   usually happens on very new Python versions (e.g. 3.13/3.14) that don't yet
   have pre-built PyAudio wheels. Easiest fix: install Python 3.12 alongside
@@ -97,11 +118,15 @@ voice_assistant/
 
 ## Author
 
-Add your name, LinkedIn, and GitHub profile link here before submission.
+**Shifa Agha**
 
-## OIBSIP Submission Notes
+GitHub Repository: https://github.com/ShifaAgha/OIBSIP
 
-- Rename this folder/repo entry to match the required format: `YourName_Task1`
-- Push to your `OIBSIP` GitHub repository
-- Record a short demo video explaining the code and showing it run, post on LinkedIn
-- Submit the GitHub link via the official submission form along with this README
+
+## Internship Information
+
+- Organization: Oasis Infobyte
+- Domain: Python Programming
+- Task: Task 1 – Voice Assistant
+
+This project was completed as part of the Oasis Infobyte Internship Program to demonstrate the implementation of a basic voice-controlled assistant using Python.
